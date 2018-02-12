@@ -5,18 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "posttest": "eslint src __tests__/index.js"
+    "posttest": "eslint src __tests__/index.js",
+    "version": "chan release ${npm_package_version} && git add .",
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/tinchoz49/parcel-plugin-surplus.git"
   },
-  "keywords": [
-    "parcel",
-    "parcel-plugin",
-    "surplus",
-    "jsx"
-  ],
+  "keywords": ["parcel", "parcel-plugin", "surplus", "jsx"],
   "author": {
     "name": "Martín Acosta"
   },
@@ -26,10 +23,7 @@
   },
   "homepage": "https://github.com/tinchoz49/parcel-plugin-surplus#readme",
   "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/__tests__/example.js"
-      ]
+    "testPathIgnorePatterns": ["/node_modules/", "/__tests__/example.js"]
   },
   "peerDependencies": {
     "parcel-bundler": "^1.5.1",
