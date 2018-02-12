@@ -1,0 +1,49 @@
+{
+  "name": "parcel-plugin-surplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "posttest": "eslint src __tests__/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tinchoz49/parcel-plugin-surplus.git"
+  },
+  "keywords": [
+    "parcel",
+    "parcel-plugin",
+    "surplus",
+    "jsx"
+  ],
+  "author": {
+    "name": "Martín Acosta"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tinchoz49/parcel-plugin-surplus/issues"
+  },
+  "homepage": "https://github.com/tinchoz49/parcel-plugin-surplus#readme",
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/example.js"
+      ]
+  },
+  "peerDependencies": {
+    "parcel-bundler": "^1.5.1",
+    "surplus": "^0.5.0-beta18"
+  },
+  "devDependencies": {
+    "@geut/chan": "^1.3.0-1",
+    "eslint": "^4.17.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-xo-space": "^0.17.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "jest": "^22.2.2",
+    "parcel-bundler": "^1.5.1",
+    "prettier": "^1.10.2",
+    "surplus": "^0.5.0-beta18"
+  }
+}
