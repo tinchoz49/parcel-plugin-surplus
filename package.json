@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-surplus",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git+ssh://git@github.com/tinchoz49/parcel-plugin-surplus.git"
   },
-  "keywords": ["parcel", "parcel-plugin", "surplus", "jsx"],
+  "keywords": [
+    "parcel",
+    "parcel-plugin",
+    "surplus",
+    "jsx"
+  ],
   "author": {
     "name": "Martín Acosta"
   },
@@ -23,7 +28,10 @@
   },
   "homepage": "https://github.com/tinchoz49/parcel-plugin-surplus#readme",
   "jest": {
-    "testPathIgnorePatterns": ["/node_modules/", "/__tests__/example.js"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/example.js"
+    ]
   },
   "peerDependencies": {
     "parcel-bundler": "^1.5.1",
