@@ -8,7 +8,7 @@ S.root(() => {
       <h1>Hello {name()}!</h1>
     </div>
   );
-  const root = document.getElementById('js-root');
+  const root = document.getElementById('ts-root');
   root.innerHTML = '';
   root.appendChild(view);
 

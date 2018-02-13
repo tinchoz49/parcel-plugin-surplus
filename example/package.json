@@ -12,7 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.5.1",
-    "parcel-plugin-surplus": "file:.."
+    "parcel-plugin-surplus": "file:..",
+    "typescript": "^2.7.1"
   },
   "dependencies": {
     "s-js": "^0.4.7",
