@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Fixed
+- sourcemap issue with the relativeName
 
 ## [1.1.0] - 2018-02-13
 ### Added
