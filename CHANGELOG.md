@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.1.1] - 2018-02-14
 ### Fixed
 - sourcemap issue with the relativeName
 
@@ -13,5 +15,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - tsx and jsx support
 
 ## 1.0.0 - 2018-02-12
-[unreleased]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.1.1...HEAD
+[1.1.1]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.0.0...v1.1.0
