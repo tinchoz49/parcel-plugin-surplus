@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "posttest": "standardx src/**/*.js __tests__/index.js",
+    "posttest": "standard src/**/*.js __tests__/index.js",
     "version": "chan release ${npm_package_version} && git add .",
     "prepublish": "npm test"
   },
@@ -42,6 +42,7 @@
     "jest": "^22.2.2",
     "parcel-bundler": "^1.5.1",
     "s-js": "^0.4.7",
+    "standard": "^10.0.3",
     "standardx": "^1.0.3",
     "surplus": "^0.5.0-beta9"
   },
