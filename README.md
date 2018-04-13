@@ -8,3 +8,6 @@
 ```
 $ npm install --save-dev parcel-plugin-surplus
 ```
+
+![example](https://user-images.githubusercontent.com/819446/38743167-cad3cb44-3f14-11e8-96cf-a6b0c54076f9.gif)
+
