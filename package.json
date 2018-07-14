@@ -34,17 +34,17 @@
     ]
   },
   "peerDependencies": {
-    "parcel-bundler": "^1.5.1",
-    "surplus": "^0.5.0-beta18"
+    "parcel-bundler": "^1.9.6",
+    "surplus": "^0.5.2"
   },
   "devDependencies": {
     "@geut/chan": "^1.3.0-1",
-    "jest": "^22.2.2",
-    "parcel-bundler": "^1.5.1",
+    "jest": "^23.4.0",
+    "parcel-bundler": "^1.9.6",
     "s-js": "^0.4.7",
-    "standard": "^10.0.3",
-    "standardx": "^1.0.3",
-    "surplus": "^0.5.0-beta9"
+    "standard": "^11.0.1",
+    "standardx": "^2.1.0",
+    "surplus": "^0.5.2"
   },
   "dependencies": {
     "deps-regex": "^0.1.4"

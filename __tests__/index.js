@@ -42,6 +42,6 @@ describe('#transform', () => {
     expect.assertions(1)
     const result = await bundler.bundle()
     const output = await readFile(outputPath, 'utf8')
-    expect(result.entryAsset.generated.js).toEqual(output)
+    expect(result.entryAsset.generated.js.trim()).toEqual(output.trim())
   })
 })
