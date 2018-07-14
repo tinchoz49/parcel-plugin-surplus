@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- support for Parcel >= v1.9.6
 
 ## [1.1.5] - 2018-02-15 [YANKED]
 
