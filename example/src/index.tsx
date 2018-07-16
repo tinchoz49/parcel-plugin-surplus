@@ -1,5 +1,6 @@
 import * as Surplus from 'surplus';
 import S from 's-js';
+let a: Array<number> = [1, 2, 3];
 
 S.root(() => {
   const name = S.data(`world ${Date.now()}`);

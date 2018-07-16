@@ -1,9 +1,5 @@
 /* eslint-env jest */
-const fs = require('fs')
-const { promisify } = require('util')
-const readFile = promisify(fs.readFile)
 const inputPath = `${__dirname}/samples/input.js`
-const outputPath = `${__dirname}/samples/output.js`
 
 describe('#initialization', () => {
   const surplusPlugin = require('../index')
@@ -11,7 +7,6 @@ describe('#initialization', () => {
   let bundler = new Bundler(inputPath)
   surplusPlugin(bundler)
   const jsAsset = 'parcel-plugin-surplus/lib/js-asset'
-  const tsAsset = 'parcel-plugin-surplus/lib/ts-asset'
 
   it('surplus plugin should be a function', () =>
     expect(typeof surplusPlugin).toBe('function'))
@@ -26,9 +21,11 @@ describe('#initialization', () => {
     expect(bundler.parser.extensions['.jsm'].includes(jsAsset)).toBeTruthy())
   it('should define SurplusAsset as the mjs asset', () =>
     expect(bundler.parser.extensions['.mjs'].includes(jsAsset)).toBeTruthy())
-  it('should define SurplusAsset as the tsx asset', () =>
-    expect(bundler.parser.extensions['.tsx'].includes(tsAsset)).toBeTruthy())
 })
+
+const output = `
+__ = Surplus.createElement("div", null, null);
+`
 
 describe('#transform', () => {
   const Bundler = require('parcel-bundler')
@@ -41,7 +38,6 @@ describe('#transform', () => {
   it('should transform the jsx in input.js', async () => {
     expect.assertions(1)
     const result = await bundler.bundle()
-    const output = await readFile(outputPath, 'utf8')
-    expect(result.entryAsset.generated.js.trim()).toEqual(output.trim())
+    expect(result.entryAsset.generated.js.trim()).toEqual(expect.stringContaining(output.trim()))
   })
 })

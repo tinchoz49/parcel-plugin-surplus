@@ -1,6 +1,6 @@
 import * as Surplus from 'surplus'
 import S from 's-js'
-
+@decorate
 S.root(() => {
   const name = S.data(`world ${Date.now()}`)
   const view = (
