@@ -11,10 +11,10 @@ $ npm install --save-dev parcel-plugin-surplus
 
 ![example](https://user-images.githubusercontent.com/819446/38743167-cad3cb44-3f14-11e8-96cf-a6b0c54076f9.gif)
 
-## Note
+## For TypeScript users
 
-- Right now the plugin doesn't work with `JSX` extension files, this is because parcel forces to use `babel-plugin-transform-react-jsx` if the source file uses the JSX extension.
-- To work with TypeScript it's necessary to add in your tsconfig.json the `jsxFactory` prop:
+To work with TypeScript it's necessary to add in your tsconfig.json the `jsxFactory` prop:
+
 ```json
 {
   "compilerOptions": {
