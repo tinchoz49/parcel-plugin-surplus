@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [1.2.1] - 2018-07-16
 ### Fixed
 - support for TS
 
@@ -31,7 +33,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - tsx and jsx support
 
 ## 1.0.0 - 2018-02-12
-[unreleased]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.2.0...HEAD
+[unreleased]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.1.5...v1.2.0
 [1.1.5]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.1.4...v1.1.5
 [1.1.4]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.1.3...v1.1.4
