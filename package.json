@@ -3,6 +3,10 @@
   "version": "1.2.1",
   "description": "",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib"
+  ],
   "scripts": {
     "test": "jest",
     "posttest": "standard src/**/*.js __tests__/index.js",
