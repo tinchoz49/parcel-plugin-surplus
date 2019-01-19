@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "test": "jest",
-    "posttest": "standard src/**/*.js __tests__/index.js",
+    "posttest": "npm run lint",
+    "lint": "standard lib/**/*.js __tests__/index.js",
     "version": "chan release ${npm_package_version} && git add .",
     "prepublish": "npm test"
   },
@@ -47,7 +48,6 @@
     "parcel-bundler": "^1.9.7",
     "s-js": "^0.4.7",
     "standard": "^11.0.1",
-    "standardx": "^2.1.0",
     "surplus": "^0.5.2"
   }
 }

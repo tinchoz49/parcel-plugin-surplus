@@ -23,10 +23,6 @@ describe('#initialization', () => {
     expect(bundler.parser.extensions['.mjs'].includes(jsAsset)).toBeTruthy())
 })
 
-const output = `
-__ = Surplus.createElement("div", null, null);
-`
-
 describe('#transform', () => {
   const Bundler = require('parcel-bundler')
   const surplusPlugin = require('../index')
@@ -38,6 +34,6 @@ describe('#transform', () => {
   it('should transform the jsx in input.js', async () => {
     expect.assertions(1)
     const result = await bundler.bundle()
-    expect(result.entryAsset.generated.js.trim()).toEqual(expect.stringContaining(output.trim()))
+    expect(result.entryAsset.generated.js.trim()).toMatchSnapshot()
   })
 })
