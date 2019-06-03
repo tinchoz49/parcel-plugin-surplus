@@ -5,8 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Check surplus dependency in content files.
 
-## [1.2.2] - 2018-07-16 [YANKED]
+## [1.2.2] - 2018-07-16
 
 ## [1.2.1] - 2018-07-16
 ### Fixed
@@ -16,11 +18,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - support for Parcel >= v1.9.6
 
-## [1.1.5] - 2018-02-15 [YANKED]
+## [1.1.5] - 2018-02-15
 
-## [1.1.4] - 2018-02-15 [YANKED]
+## [1.1.4] - 2018-02-15
 
-## [1.1.3] - 2018-02-14 [YANKED]
+## [1.1.3] - 2018-02-14
 
 ## [1.1.2] - 2018-02-14
 ### Fixed
@@ -35,7 +37,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - tsx and jsx support
 
 ## 1.0.0 - 2018-02-12
-[unreleased]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.2.2...HEAD
+[Unreleased]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.2.2...HEAD
 [1.2.2]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.2.1...v1.2.2
 [1.2.1]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/tinchoz49/parcel-plugin-surplus/compare/v1.1.5...v1.2.0
