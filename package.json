@@ -43,11 +43,14 @@
     "surplus": "^0.5.2"
   },
   "devDependencies": {
-    "@geut/chan": "^1.3.0-1",
-    "jest": "^23.4.0",
-    "parcel-bundler": "^1.9.7",
+    "@geut/chan": "^2.0.0",
+    "jest": "^24.8.0",
+    "parcel-bundler": "^1.12.3",
     "s-js": "^0.4.7",
-    "standard": "^11.0.1",
+    "standard": "^12.0.1",
     "surplus": "^0.5.2"
+  },
+  "dependencies": {
+    "deps-regex": "^0.1.4"
   }
 }

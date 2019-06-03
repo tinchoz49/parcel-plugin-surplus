@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`#transform should not try to parse with the surplus compiler 1`] = `"received is not a function"`;
+
 exports[`#transform should transform the jsx in input.js 1`] = `
 "\\"use strict\\";
 

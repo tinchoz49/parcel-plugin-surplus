@@ -26,14 +26,34 @@ describe('#initialization', () => {
 describe('#transform', () => {
   const Bundler = require('parcel-bundler')
   const surplusPlugin = require('../index')
-  let bundler = new Bundler(inputPath, {
-    watch: false
-  })
-  surplusPlugin(bundler)
 
   it('should transform the jsx in input.js', async () => {
     expect.assertions(1)
+
+    let bundler = new Bundler(inputPath, {
+      watch: false
+    })
+
+    surplusPlugin(bundler)
+
     const result = await bundler.bundle()
+
     expect(result.entryAsset.generated.js.trim()).toMatchSnapshot()
+  })
+
+  it('should not try to parse with the surplus compiler', async () => {
+    expect.assertions(1)
+
+    let bundler = new Bundler(`${__dirname}/samples/no-surplus-view.js`, {
+      watch: false
+    })
+
+    surplusPlugin(bundler)
+
+    try {
+      await bundler.bundle()
+    } catch (e) {
+      expect(e).toThrowErrorMatchingSnapshot()
+    }
   })
 })
